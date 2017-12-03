@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>贷款申请</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="./css/framework7.ios.min.css">
+    <link rel="stylesheet" href="./css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="./css/my-app.min.css">
+</head>
+<body>
+<div class="views">
+    <div class="view view-main">
+        <div class="pages">
+            <div data-page="index" class="page navbar-fixed toolbar-fixed">
+
+                <div class="content-block-title">填写基本信息</div>
+                <div class="list-block">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">姓名</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入姓名">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">手机号</div>
+                                    <div class="item-input">
+                                        <input type="tel" placeholder="请输入手机号">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Select -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">性别</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option>男</option>
+                                            <option>女</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Date -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">所在地</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请选择所在地" readonly id="location" name="location">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">家庭住址</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入家庭住址">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">身份证号</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入身份证信息">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Date time-->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">贷款金额</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入贷款金额">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Switch (Checkbox) -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">贷款期限(月)</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="如 12">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slider (Range input) -->
+                    </ul>
+                </div>
+                <div class="toolbar">
+                    <a href="#" class="button button-big">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="./js/demo.min.js"></script>
+<script src="./js/regionsObject2.min.js"></script>
+<script src="./js/cityPicker.min.js"></script>
+</body>
+</html>

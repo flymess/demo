@@ -1,1 +1,5 @@
 .idea/
+build.map
+node_modules/
+s
+package-lock.json
